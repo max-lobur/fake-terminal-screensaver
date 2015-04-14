@@ -1,2 +1,2 @@
 # fake-terminal-screensaver
-A screensaver (in future) that prints terminal output from prepopulated file
+A screensaver that simulates terminal running job printing the lines from the prepopulated file.
