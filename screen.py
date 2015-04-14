@@ -1,6 +1,6 @@
 from __future__ import print_function	
 import os
-from random import randint
+from random import uniform, gauss
 from time import sleep
 
 my_location = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
@@ -10,4 +10,7 @@ while True:
     with open(input_path) as f:
         for l in f:
             print(l, end="")
-            sleep(randint(100, 600) / 1000.0)   
+            #timeout = uniform(0.1, 0.6)
+            timeout = abs(gauss(0.0, 0.3))
+            sleep(timeout)
+
